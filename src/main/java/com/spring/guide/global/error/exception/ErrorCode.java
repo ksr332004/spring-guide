@@ -23,9 +23,10 @@ public enum ErrorCode {
     COUPON_EXPIRE(400, "CO002", "Coupon was already expired")
 
     ;
+
+    private int status;
     private final String code;
     private final String message;
-    private int status;
 
     ErrorCode(final int status, final String code, final String message) {
         this.status = status;
